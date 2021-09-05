@@ -2,7 +2,7 @@
 export default {
   mount: {
     public: { url: '/', static: true },
-    c: { url: '/dist' },
+    elements: { url: '/dist' },
   },
   plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-dotenv'],
   routes: [
