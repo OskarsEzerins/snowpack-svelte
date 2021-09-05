@@ -1,11 +1,10 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
-    /* ... */
+    public: '/',
+    c: '/dist',
   },
-  plugins: [
-    /* ... */
-  ],
+  plugins: ['@snowpack/plugin-svelte'],
   routes: [
     /* Enable an SPA Fallback in development: */
     // {"match": "routes", "src": ".*", "dest": "/index.html"},
@@ -23,4 +22,4 @@ export default {
   buildOptions: {
     /* ... */
   },
-};
+}
