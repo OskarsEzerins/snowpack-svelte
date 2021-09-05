@@ -22,3 +22,17 @@ Your app is ready to be deployed!
 ### Q: What about Eject?
 
 No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+
+## Docker
+
+### Build image from Dockerfile
+
+```shell
+docker build -t cacao .
+```
+
+### Create and run container from Dockerfile
+
+```shell
+docker container run --name cacao -tdip 5000:80 cacao
+```
